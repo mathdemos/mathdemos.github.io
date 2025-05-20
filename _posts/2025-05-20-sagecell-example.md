@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "sagecell example"
-tags: jekyll
+tags: sagecell
 math: on
 ---
 

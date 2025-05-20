@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Markdown Cheatsheet"
+date: 2025-05-20
 tags: markdown
-no_math: false
 ---
 
 # Header 1

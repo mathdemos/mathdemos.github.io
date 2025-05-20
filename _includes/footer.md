@@ -1,4 +1,4 @@
-[X](https://x.com/codyluo369502)
-| [GitHub](https://github.com/a-boy)
+[GitHub](https://github.com/mathdemos)
+| [Email](mailto:codyluo@aliyun.com)
 
 @2025 

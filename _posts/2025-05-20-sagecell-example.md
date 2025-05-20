@@ -3,6 +3,7 @@ layout: post
 title:  "sagecell example"
 tags: sagecell
 math: on
+contributors: "Cody Luo"
 ---
 
 # SageCell示例

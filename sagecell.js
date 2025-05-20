@@ -10,18 +10,16 @@
             inputLocation: '.sage',
             evalButtonText: '运行',
             autoeval: true,
-            //editor: "textarea",
-            hide:["fullscreen"],
-            //mode: "debug",
-            //template: sagecell.templates.minimal
+            linked: true,
+            linkKey: "key1"
         });
         
         // 使任何带有'sage-interact'类的div成为交互式SageCell
         sagecell.makeSagecell({
             inputLocation: '.sage-interact',
             evalButtonText: '运行交互',
-            mode: "debug",
-            template: sagecell.templates.minimal
+            //mode: "debug",
+            //template: sagecell.templates.minimal
         });
     };
     document.head.appendChild(script);

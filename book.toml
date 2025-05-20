@@ -10,6 +10,9 @@ git-repository-url = "https://github.com/mathdemos/mathdemos.github.io"
 git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/mathdemos/mathdemos.github.io/edit/main/{path}"
 additional-js = ["sagecell.js"]
+#additional-css = ["custom.css", "custom2.css"]
+no-section-label = false
+curly-quotes = false
 
 [preprocessor.katex]
 after = ["links"]

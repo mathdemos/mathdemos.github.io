@@ -25,7 +25,7 @@ description: >- # You can edit footer in _includes/footer.md
 google_analytics: # Enter your tracking ID. Not available on IPFS
 
 twitter_cards: off # Not available on IPFS. /assets/logo.png required
-twitter_username: codyluo369502
+twitter_username: 
 
 # Build settings
 markdown: kramdown
@@ -35,7 +35,7 @@ sass:
 # use custom theme
 theme: null
 
-permalink: /:title
+permalink: /:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-gems: [jekyll-sitemap, jekyll-feed]
+#plugins: [jekyll-sitemap, jekyll-feed]
 
 encoding: utf-8
 lang: zh_CN
@@ -19,7 +19,7 @@ lang: zh_CN
 # in the templates via {{ site.myvariable }}.
 title: 数学演示 Mathdemos
 baseurl: "" # For github pages
-description: >- # You can edit footer in _includes/footer.md
+description: >- # You can edit footer in _includes/footer.html
   Mathdemos powered by Sagemath/Sagecell, Jekyll with theme ultralight.
 
 google_analytics: # Enter your tracking ID. Not available on IPFS
@@ -50,3 +50,7 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE
+
+collections:
+  News:
+    output: true

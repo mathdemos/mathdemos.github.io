@@ -2,14 +2,32 @@
 layout: default
 ---
 <div style="padding: 1em;">
-<span style="font-weight: bold;" >{{ site.posts | size }} Posts</span>
+<span style="font-weight: bold;" >Posts {{ site.posts | size }}</span>
 <ul>
     {% for post in site.posts %}
     <li>
         <a href="{% include relative %}{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
         {% for tag in post.tags %} | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>{% endfor %}
     </li>
     {% endfor %}
 </ul>
+
+<span style="font-weight: bold;" >News {{ site.News | size }}</span>
+<ul>
+    {% for post in site.News %}
+    <li>
+        <a href="{% include relative %}{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        {% for tag in post.tags %} | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>{% endfor %}
+    </li>
+    {% endfor %}
+</ul>
+
+</div>
+<div>
+<a href="/feed.xml"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 2 2"><circle cx=".276" cy="1.725" r=".274" style="fill:#000"/><path d="M1.327 2H.94A.937.937 0 0 0 0 1.063v-.39A1.326 1.326 0 0 1 1.327 2z" style="fill:#000"/><path d="M1.601 2A1.6 1.6 0 0 0 .001.4V0a2 2 0 0 1 2 2z" style="fill:#000"/></svg>RSS</a>
+<a href="/sitemap.xml">Sitemap</a>
+<a href="https://github.com/mathdemos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><title>GitHub</title><path fill="currentColor" d="M8 .43C3.714.43.24 3.905.24 8.192c0 3.428 2.223 6.337 5.307 7.363.388.07.53-.168.53-.374l-.01-1.32c-2.16.47-2.614-1.04-2.614-1.04-.353-.896-.862-1.135-.862-1.135-.705-.48.053-.472.053-.472.78.055 1.19.8 1.19.8.692 1.186 1.816.843 2.258.645.07-.502.27-.843.493-1.037-1.723-.197-3.534-.862-3.534-3.836 0-.847.302-1.54.8-2.082-.08-.197-.347-.986.076-2.054 0 0 .652-.21 2.134.796A7.39 7.39 0 0 1 8 4.184a7.45 7.45 0 0 1 1.943.261c1.482-1.004 2.132-.796 2.132-.796.423 1.068.157 1.857.077 2.054.497.542.798 1.235.798 2.082 0 2.98-1.814 3.637-3.543 3.83.28.24.527.713.527 1.437l-.01 2.13c0 .208.14.45.534.373 3.08-1.028 5.302-3.935 5.302-7.362C15.76 3.906 12.285.43 8 .43z"></path></svg>GitHub</a>
+<a href="mailto:codyluo@aliyun.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"/></svg>Email</a>
 </div>

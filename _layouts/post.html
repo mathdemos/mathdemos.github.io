@@ -7,7 +7,7 @@ layout: default
             <a href="{% include relative %}/tags/#{{ page.tags[0] | downcase }}">#{{ page.tags[0] }}</a> {{ page.title | escape }}
         </h1>
         <p class="post-info">
-            {{ page.contributors | default: page.creator | default: page.editor }} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+            {{ page.contributors | default: page.creator | default: page.editor }} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
             <a href="{{ site.github.repository_url }}/edit/main/{{ page.relative_path }}">Edit</a>
             {% for tag in page.tags %} | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>{% endfor %}
         </p>

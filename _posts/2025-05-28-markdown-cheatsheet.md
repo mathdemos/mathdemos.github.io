@@ -53,9 +53,9 @@ Links
 
 A [link](http://example.com).
 
-An image: ![Alt](img.jpg)
+An image: ![Alt](assets/dragonfly.png)
 
-A sized image: ![Alt](img.jpg =60x50)
+A sized image: ![Alt](assets/dragonfly.png =60x50)
 
 
 

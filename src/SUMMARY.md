@@ -16,4 +16,5 @@
 - [Glossary]()
 - [Chapter 1](./chapter_1.md)
 - [sagecell example](./sagecell-example.md)
+- [sagecell 2](./sagecell-2.md)
 - [Payley Graph](./Payley%20Graph/index.md)

@@ -5,9 +5,9 @@
     script.src = 'https://sagecell.sagemath.org/static/embedded_sagecell.js';
     script.onload = function() {
         // 脚本加载完成后初始化SageCell
-        // 使任何带有'sage'类的div成为SageCell
+        // 使任何带有'sage'类的tag成为SageCell
         sagecell.makeSagecell({
-            inputLocation: '.sage',
+            inputLocation: ['.sage','.language-sage'],
             evalButtonText: '运行',
             autoeval: true,
             linked: true,

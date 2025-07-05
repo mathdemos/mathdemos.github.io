@@ -19,8 +19,11 @@ plot(sin(x), (x, 0, 2*pi))
 
 ## 交互式计算
 
-<div class="sage">
+```sage
+
+# 交互式计算
+
 @interact
 def _(a=(1, 10)):
-    print(factorial(a))
-</div>
+    print(factorial(a)) 
+```
